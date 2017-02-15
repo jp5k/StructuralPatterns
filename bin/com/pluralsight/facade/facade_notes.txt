@@ -1,0 +1,22 @@
+Facade Design Pattern (java.net.URL , javax.faces.context.FacesContext)
+* Make an API easier to use (often when wrap a facade around a poorly designed API)
+* Simplify dependencies on outside code
+* Simplify the interface or client usage
+* Usually a refactoring pattern
+
+Design
+* Class that utilizes composition 
+* Shouldn't have a need for inheritance
+* Typically encompassed full lifecycle
+
+Pitfalls
+* Typically used to clean up code which was poorly designed 
+* Should think about API design
+* Deals with flat problem/structure (shouldn't be using inheritance)
+* The 'Singleton' of Structual pattern (e.g overused)
+* 
+
+Facade                            vs        Adapter
+* Simplifies Interface						* Also a refactoring patternt
+* Works with composites 					* Modifies behaviour (adds)
+* Cleaner API 								* Provides a different interface 

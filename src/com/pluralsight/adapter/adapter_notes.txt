@@ -1,0 +1,25 @@
+Adapter Design Pattern (Think JDBC connection)
+For working with legacy code, without having to change contract of legacy code.
+Think of a plug adapter - a device which plugs into a socket via an adapter.
+
+Overview
+* Client needs to talk to existing interface (legacy)
+* May not be able to change legacy code
+* Translates requests
+* Client talks to adaptee, via an adapter
+* Examples are Arrays --> Lists conversions, Stream classes also have adapters to work with other readers 
+
+Design
+* Very client centric - Integrate new with old 
+
+Pitfalls
+* Very few pitfalls
+* Don't complicate
+* Don't forget, can use multiple adapters (as in example)
+* Don't add functionality (use decorator instead)
+
+Adapter                            vs                         Bridge
+* Works after code is designed								  * Designed upfront
+* Works with Legacy code									  * Abstraction and implementation vary
+* Retrofitted to make legacy code work						  * Built in advance
+* Provides different interface								  * Both adapt multiple systems

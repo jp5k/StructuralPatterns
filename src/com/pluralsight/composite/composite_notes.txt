@@ -1,0 +1,29 @@
+Composite Design Pattern (java.awt.Component , JSF Widgets, RESTful service GETs)
+
+Overview
+* Hierarchical, dealing with tree structures
+* Treats components the same whether they are part of the strucutre, or the entire structure.
+* This is done by configuring objects into tree structures
+* Individual objects are treated as a Composite
+* Same operations applied on individual and composite
+
+Design
+* Tree structured
+* Root of tree starts with a component.  A component is either a Leaf, or 
+a Composite.  Can carry out same operations on both.
+* Difference is that Composite knows about child objects
+* Component, Leaf, Composite
+
+Pitfalls
+* Can overly simplify system
+* Can be difficult to restrict what we want to add to it (i.e just keep adding menu 
+items of all types)
+* Because of this, end up adding runtime checks rather than having compile time checks for
+compile time safety.
+* Implementation can be costly (e.g each composite has many childen).
+
+Composite                            vs                      Decorator   	
+* Tree structure										* Contains another entity (through composition)
+* Leaf and Composite have same interface				* Modifies behaviour (adds to underlying entity)
+* Unity between objects									* Doesn't change underlying object
+

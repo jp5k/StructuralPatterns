@@ -1,0 +1,28 @@
+Bridge Design Pattern (Think Drivers and JDBC Java API)
+
+Overview
+* Decouple abstraction and implementation
+* Encapsulation, Composition, Inheritance
+* Changes in Abstraction won't affect the client
+* We know the details won't be right to begin within (add indirection into application, if we need 
+flexibility)
+
+Design
+* Interfaces and Abstract Classes
+* Favours composition over inheritance (but more than just composition)
+* This design pattern caters for change on both sides.
+*Abstraction, Implementor, Refined Abstraction, Concrete Implementor
+
+Pitfalls
+* Increases complexity
+* Conceptually difficult to plan
+* More than just OO principles (e.g. more than just inheritance and abstraction)
+* Can be confusing, what goes where??
+
+Bridge                            vs                         	Adapter
+* Designed upfront											*Works after code is designed											
+* Abstraction and implementation can vary					* Designed for legacy applications
+(e.g printer and formatter objects.  Can vary either 	    * Typically retrofitted in
+side without breaking the other)							* Provides different interface for legacy code
+* Built in advance 
+* Complex

@@ -1,0 +1,24 @@
+Decorator Design Pattern (java.io.InputStream, UI Components in awt package and swing package)
+* Also called a wrapper (wraps an object to add behaviour)
+* Can add behaviour without affecting others 
+* More than just inheritance (controlling which pieces add to object)
+* Single responsibility principle (do one thing, and do it well)
+* Can compose behaviour dynamically
+
+Design
+* Inheritance based 
+* Utilizes composition and inheritance (is-a, has-a)
+* Functionality is added in the sub-components
+* An alternative to subclassing
+* Constructor requires instance from hierarchy (uses composition rather than inheritance 
+to override which fields it wants to)
+
+Pitfalls
+* You end up building a new class for every feature you want to decorate
+End up with a lot of little specialised objects.
+* Often confused with simple inheritance (BUT WE DON'T ACTUALLY CHANGE THE UNDERLYING OBJECT)
+
+Composite                            vs                      Decorator   	
+* Tree structure										* Contains another entity (through composition)
+* Leaf and Composite have same interface				* Modifies behaviour (adds to underlying entity)
+* Unity between objects									* Doesn't change underlying object

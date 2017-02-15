@@ -1,0 +1,22 @@
+Flyweight Design Pattern (java.lang.String, java.lang.Integer#valueOf(int)
+* Used when more efficient use of memory is needed
+* Used when you have a large number of similar objects
+* Used for immutable objects
+* Where most of the object states can be extrinsic
+
+Design
+* A Pattern of patterns
+* Utilises a Factory pattern  
+* Encompasses Creation and Structure
+* Client, FlyweightFactory Flyweight, ConcreteFlyweight
+
+Pitfalls
+* Complex pattern
+* Don't usually want to prematurely optimize (bad design??)
+* Must understand Factory pattern to use flyweight
+* Not just a graphical pattern
+
+Flyweight                            vs        	Facade
+* Memory optimization							* Refactoring pattern
+* Optimization pattern							* Simplified client
+* Immutable Objects								* Provides a different interface

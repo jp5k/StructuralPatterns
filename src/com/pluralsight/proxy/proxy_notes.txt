@@ -1,0 +1,26 @@
+Proxy Design Pattern (java.lang.reflect.Proxy (Facilitates Proxy patterns)), java.rmi)
+* Great utilities built into Java API
+* Can only have one instance of the proxy
+* Interface by wrapping
+* Used a lot by DIJ/IOC frameworks
+* Can add functionality
+* Security, Simplicity, Remote, Cost
+* Proxy called to access real object 
+
+Design
+* Interface based (e.g. Spring, Hibernate use it)
+* Interface and Implementation class, that the proxy resides inbetween
+* java.lang.reflect.InvocationHandler and java.lang.reflect.Proxy (available to facilitate 
+Proxy designs)
+* Client, Interface, InvocationHandler, Proxy, Implementation 
+
+Pitfalls
+* Only ONE proxy allowed !!
+* Another abstraction layer (e.g confusion about what you're calling)
+* Similar to other patterns - hard to identify if you need a proxy
+
+Proxy                            vs        	Decorator
+* Can add functionality 					* Dynamically add functionality
+but not its main purpose					* Chained 
+* Can only have one							* Decorator points to its own type
+* Functionality at compile time				* Functionality determined at runtime
